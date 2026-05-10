@@ -1,3 +1,15 @@
 # Traveloop App
 
-The application demonstrate proper use of relational databases to store and retrieve complex travel data such as user-specific itineraries, stops, activities, and estimated expenses. The system also support dynamic user interfaces that adapt to each user's trip flow.
+A travel planning application for creating personalized multi-city itineraries.
+
+## Planned Features
+- Trip planning
+- Itinerary management
+- Budget tracking
+- Activity discovery
+- Shared trip viewing
+
+## Tech Stack
+- React
+- Node.js
+- MySQL
