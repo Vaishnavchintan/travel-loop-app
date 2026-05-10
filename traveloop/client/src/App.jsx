@@ -1,31 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
     const [activePage, setActivePage] = useState("Dashboard");
 
-    const trips = [
-        {
-            id: 1,
-            title: "Japan Spring Trip",
-            destinations: "Tokyo • Kyoto • Osaka",
-            budget: "$2400",
-            status: "Planned",
-        },
-        {
-            id: 2,
-            title: "Europe Backpacking",
-            destinations: "Paris • Rome • Prague",
-            budget: "$4200",
-            status: "In Progress",
-        },
-        {
-            id: 3,
-            title: "Goa Weekend",
-            destinations: "Goa",
-            budget: "$600",
-            status: "Completed",
-        },
-    ];
+    useEffect(() => {
+        fetch("http://localhost:5000/api/trips")
+            .then((res) => res.json())
+            .then((data) => {
+                setTrips(data);
+            })
+            .catch((err) => {
+                console.error("API Error:", err);
+            });
+    }, []);
+
+    const [trips, setTrips] = useState([]);
 
     const navItems = [
         "Dashboard",
@@ -140,7 +129,7 @@ function App() {
                                 <h3>{trip.title}</h3>
 
                                 <p style={{ color: "#b0b0b0" }}>
-                                    {trip.destinations}
+                                    {trip.destination}
                                 </p>
 
                                 <p>
@@ -171,7 +160,7 @@ function App() {
                             >
                                 <h3>{trip.title}</h3>
 
-                                <p>{trip.destinations}</p>
+                                <p>{trip.destination}</p>
                             </div>
                         ))}
                     </div>
