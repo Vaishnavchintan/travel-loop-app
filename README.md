@@ -14,3 +14,10 @@ Backend:
 
 Database:
 - MySQL (planned)
+
+## Backend Setup
+
+```bash
+cd server
+npm install
+npm run dev
