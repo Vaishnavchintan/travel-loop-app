@@ -1,8 +1,17 @@
-# Traveloop App
+# Traveloop
 
-Traveloop is a travel planning application where users can create personalized multi-city itineraries, manage activities, and track travel budgets.
+Traveloop is a multi-city travel planning platform built for the Odoo Hackathon.
 
-## Current Setup
+## Features
+
+- Travel dashboard
+- Multi-trip management
+- Budget tracking
+- Itinerary planning
+- Mock API integration
+- Responsive travel UI
+
+## Tech Stack
 
 Frontend:
 - React
@@ -10,14 +19,14 @@ Frontend:
 
 Backend:
 - Node.js
-- Express (planned)
+- Express
 
 Database:
 - MySQL (planned)
 
-## Backend Setup
+## Run Frontend
 
 ```bash
-cd server
+cd client
 npm install
 npm run dev
