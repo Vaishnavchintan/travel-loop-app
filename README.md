@@ -1,15 +1,16 @@
 # Traveloop App
 
-A travel planning application for creating personalized multi-city itineraries.
+Traveloop is a travel planning application where users can create personalized multi-city itineraries, manage activities, and track travel budgets.
 
-## Planned Features
-- Trip planning
-- Itinerary management
-- Budget tracking
-- Activity discovery
-- Shared trip viewing
+## Current Setup
 
-## Tech Stack
+Frontend:
 - React
+- Vite
+
+Backend:
 - Node.js
-- MySQL
+- Express (planned)
+
+Database:
+- MySQL (planned)
