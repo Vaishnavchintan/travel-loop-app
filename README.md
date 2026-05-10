@@ -61,6 +61,8 @@ traveloop/
 └── README.md
 ```
 
+---
+
 ## Run Frontend
 
 ```bash
@@ -85,6 +87,9 @@ Backend runs on:
 ```bash
 http://localhost:5000
 ```
+
+---
+
 ## API Endpoints
 
 ### Get Trips
@@ -97,6 +102,9 @@ GET /api/trips
 ```bash
 POST /api/trips
 ```
+
+---
+
 ## Team
 
 Built for the Odoo Hackathon using React, Express, and collaborative GitHub workflow.
